@@ -1,0 +1,64 @@
+<body>
+  <div class="container bg-accent-green">
+
+    <div class="main">
+
+      <div class="home">
+
+        <div class="row-green">
+          <% 7.times do %>
+          <div class="green-item">&nbsp;</div>
+          <% end %>
+        </div>
+
+        <div class="row-white">
+          <% 7.times do %>
+          <div class="white-item">&nbsp;</div>
+          <% end %>
+        </div>
+        <div class="row-white">
+          <div class="single-cell">&nbsp;</div>
+          <div class="single-cell">&nbsp;</div>
+          <div class="single-cell">&nbsp;</div>
+          <div class="img-container animated fadeIn"><h1>These are all of your tasks</h1>
+          </div>
+
+          <div class="copy"><form action="">
+            <% @tasks.each do |t| %>
+            <% if t.completed %>
+            <input type="checkbox" name="task" checked> <%= link_to t.title, task_path(t) %> <%= link_to "(Delete)", task_path(t),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %><br>
+            <% else %>
+            <input type="checkbox" name="task"> <%= link_to t.title, task_path(t)%> <%= link_to "(Delete)", task_path(t),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+            <% end %>
+            <% end %>
+          </form></div>
+          <% 22.times do %>
+          <div class="single-cell">&nbsp;</div>
+          <% end %>
+        </div>
+        <div class="row-white">
+          <div class="white-item">&nbsp;</div>
+          <div class="white-item">&nbsp;</div>
+          <div class="btn-yellow">
+            <%= link_to "+ Create a new task", new_task_path %>
+          </div>
+          <div class="white-item">&nbsp;</div>
+          <div class="white-item">&nbsp;</div>
+        </div>
+        <div class="row-green">
+          <% 7.times do %>
+          <div class="green-item">&nbsp;</div>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+</body>

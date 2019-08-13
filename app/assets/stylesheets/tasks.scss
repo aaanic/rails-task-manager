@@ -1,0 +1,181 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-accent-green {
+    background-color: #adddbd;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.home .img-container {
+  text-align: center;
+  grid-column: 2/7;
+  grid-row: 1/6;
+  background-color: #f48271;
+  border: 1px solid #3e3d3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.row-green {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.row-white {
+  display: grid;
+  grid-auto-rows: 50px;
+  grid-template-columns: repeat(7,1fr);
+}
+.row-green .green-item {
+  background-color: #5abb7a;
+  border: 1px solid #3e3d3a;
+}
+
+.single-cell, .white-item {
+  background-color: #fbfaf5;
+  border: 1px solid #3e3d3a;
+  height: 50px;
+}
+
+.btn-yellow {
+  height: 50px;
+  border: 1px solid #3e3d3a;
+  background-color: #ffda4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 3/ span 3;
+  justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.btn-yellow-small {
+  height: 50px;
+  border: 1px solid #3e3d3a;
+  background-color: #ffda4e;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+
+.home .copy {
+  background-color: #aeb8dc;
+  border: 1px solid #3e3d3a;
+  grid-column: 3/6;
+  grid-row: 6/8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.single-cell, .white-item {
+  background-color: #fbfaf5;
+  border: 1px solid #3e3d3a;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    background-color: #D8F99B;
+  }
+}
+
+hr {
+  color: #AFB1B3;
+  margin: 20px;
+  border-style: solid;
+}
+
+.new_task > input {
+  width: 300px;
+  display: inline-block;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"] {
+  height: 45px;
+  border: 1px solid #3e3d3a;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.detail-block {
+  margin: 20px;
+  background-color: #DEE1E6;
+  padding:20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.create-card {
+  text-align: center;
+  height: 400px;
+  width: 500px;
+  background-color: #f48271;
+  padding: 30px;
+  border: 50px solid #fff;
+}
